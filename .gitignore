@@ -1,0 +1,18 @@
+
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+
+# Ignore large datasets
+data/*.csv
+data/**/*.csv
+
+# Include only the lightweight dashboard summary
+!data/processed/dashboard_summary.csv
+
+# Ignore generated reports
+reports/*.csv
+reports/*.png
+.ipynb_checkpoints/
